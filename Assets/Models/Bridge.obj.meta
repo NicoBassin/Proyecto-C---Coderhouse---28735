@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8432e4539d0e6f944b34287af178a562
+guid: 562a93513bd20b941b695af9b67e1221
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,33 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.498039_0.498039_0.498039_0.000000_0.000000
-    second: {fileID: 2100000, guid: 5030d5ce5e03e5243a854729054426c2, type: 2}
+      name: Part_1Mat
+    second: {fileID: 2100000, guid: 5d9ccace458562a4785dd70700f1dda6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.615686_0.811765_0.929412_0.000000_0.000000
-    second: {fileID: 2100000, guid: c09156bc1c8c77a47825c71629369010, type: 2}
+      name: Part_2Mat
+    second: {fileID: 2100000, guid: 40054f6c75f4e6645b7d02b1f5548103, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.647059_0.647059_0.647059_0.000000_0.000000
-    second: {fileID: 2100000, guid: 463c7005b7332a349988ef9bba7aab32, type: 2}
+      name: Part_3Mat
+    second: {fileID: 2100000, guid: c82959ce19504fe4cb84ffa7ab23fcc9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.768627_0.886275_0.952941_0.000000_0.000000
-    second: {fileID: 2100000, guid: 6b634f267717c45459d8f58f02722646, type: 2}
+      name: Part_4Mat
+    second: {fileID: 2100000, guid: 166e9580809eae14cb832a13dbe81027, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.917647_0.917647_0.917647_0.000000_0.000000
-    second: {fileID: 2100000, guid: 6c2c4c205e10f6949a59ee96594e949b, type: 2}
+      name: Part_5Mat
+    second: {fileID: 2100000, guid: 06342c763c83ff449897b0c0bd32a799, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 0.972549_0.529412_0.003922_0.000000_0.000000
-    second: {fileID: 2100000, guid: 934d2c5fcc8409d40858bc82933122bb, type: 2}
+      name: Part_6Mat
+    second: {fileID: 2100000, guid: 44445349bd111fd4f83276302d324ada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Part_7Mat
+    second: {fileID: 2100000, guid: 4c1d0e99a5d5b9141977532042ea8388, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
