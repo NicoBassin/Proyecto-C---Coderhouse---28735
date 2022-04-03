@@ -10,10 +10,18 @@ public class PlayerCharacterController : MonoBehaviour
     // Variables para el salto.
     private Vector3 playerJump;
     private float playerSpeed = 2.0f;
-    private float jumpHeight = 2.0f;
+    private float jumpHeight = 1.5f;
     private float gravity = -9.81f;
     private bool canJump = true;
     private float originalStepOffset;
+
+    // Transform del PlayerLook para mover la cámara.
+    [SerializeField] private Transform playerLookAt;
+    private float xAxisRotation = 0f;
+    private float yAxisRotation = 0f;
+    private float xMinRotation = -90f;
+    private float xMaxRotation = 90f;
+    [SerializeField] private float sensibility = 2.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +35,7 @@ public class PlayerCharacterController : MonoBehaviour
     {
         PlayerMove();
         PlayerJump();
+        PlayerRotate();
     }
 
     private void PlayerJump(){
@@ -55,21 +64,38 @@ public class PlayerCharacterController : MonoBehaviour
     private void PlayerMove(){
         // Si el jugador pulsa WASD se mueve.
         if(Input.GetKey(KeyCode.W)){
-            PlayerMove(Vector3.forward);
+            CCMove(Vector3.forward);
         }
         if(Input.GetKey(KeyCode.S)){
-            PlayerMove(Vector3.back);
+            CCMove(Vector3.back);
         }
         if(Input.GetKey(KeyCode.A)){
-            PlayerMove(Vector3.left);
+            CCMove(Vector3.left);
         }
         if(Input.GetKey(KeyCode.D)){
-            PlayerMove(Vector3.right);
+            CCMove(Vector3.right);
         }
     }
 
-    private void PlayerMove(Vector3 direction){
+    private void CCMove(Vector3 direction){
         // Movimiento con Character Controller.
         ccPlayer.Move(playerSpeed * transform.TransformDirection(direction) * Time.deltaTime);
+    }
+
+    private void PlayerRotate(){
+        // Los Inputs x / y (hasta cierto punto) del mouse varían el ángulo de la cámara,
+        // Solo el input x del mouse varía la rotación local del jugador.
+        xAxisRotation -= Input.GetAxis("MouseY") * sensibility;
+        yAxisRotation += Input.GetAxis("MouseX") * sensibility;
+        if(xAxisRotation <= xMinRotation){
+            xAxisRotation = xMinRotation;
+        }
+        if(xAxisRotation >= xMaxRotation){
+            xAxisRotation = xMaxRotation;
+        }
+        Quaternion cameraAngle = Quaternion.Euler(xAxisRotation, 0f, 0f);
+        Quaternion playerAngle = Quaternion.Euler(0f, yAxisRotation, 0f);
+        playerLookAt.localRotation = cameraAngle;
+        transform.rotation = playerAngle;
     }
 }

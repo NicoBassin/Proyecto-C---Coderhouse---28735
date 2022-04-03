@@ -332,6 +332,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1417658824596194690, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
   m_PrefabInstance: {fileID: 1417658825158805049}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &640987353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1417658824532283223, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
+  m_PrefabInstance: {fileID: 1417658825158805049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +504,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1417658824532283223, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1417658826052789508, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -546,6 +555,18 @@ PrefabInstance:
     - target: {fileID: 1417658826052789624, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417658826052789627, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
+      propertyPath: playerLook
+      value: 
+      objectReference: {fileID: 640987353}
+    - target: {fileID: 1417658826052789627, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
+      propertyPath: sensibility
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417658826052789627, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
+      propertyPath: xMinRotation
+      value: -88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea5c5d3823ca9714ca88aeef288a64a7, type: 3}
