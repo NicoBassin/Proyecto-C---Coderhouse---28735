@@ -85,8 +85,8 @@ public class PlayerCharacterController : MonoBehaviour
     private void PlayerRotate(){
         // Los Inputs x / y (hasta cierto punto) del mouse varían el ángulo de la cámara,
         // Solo el input x del mouse varía la rotación local del jugador.
-        xAxisRotation -= Input.GetAxis("MouseY") * sensibility;
-        yAxisRotation += Input.GetAxis("MouseX") * sensibility;
+        xAxisRotation -= Input.GetAxis("Mouse Y") * sensibility;
+        yAxisRotation += Input.GetAxis("Mouse X") * sensibility;
         if(xAxisRotation <= xMinRotation){
             xAxisRotation = xMinRotation;
         }
