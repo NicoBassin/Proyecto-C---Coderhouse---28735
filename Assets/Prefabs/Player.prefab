@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2308071704458358043}
   - component: {fileID: 2308071704458358116}
   - component: {fileID: 2308071704458358040}
+  - component: {fileID: 1803981460}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +52,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: -0.125, z: 0}
+  m_Center: {x: 0, y: 0.875, z: 0}
 --- !u!114 &2308071704458358040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,8 +65,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b28bc6780c69484a8fe0f941aa65cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: 3.5
   playerLookAt: {fileID: 2308071705912610273}
   sensibility: 2.5
+--- !u!114 &1803981460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308071704458358119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae320de6707132a43b49532bbbf52d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2308071705814556837
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2308071705912610272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.647, z: 0.331}
+  m_LocalPosition: {x: 0, y: 1.6470001, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2308071705814557018}
@@ -144,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a91f3cf476d4b0c4b81c916d6ba7edb4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a91f3cf476d4b0c4b81c916d6ba7edb4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -182,6 +196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Model
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: a91f3cf476d4b0c4b81c916d6ba7edb4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 23704d11cc36a9e4aa5388c15bfa3645, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91f3cf476d4b0c4b81c916d6ba7edb4, type: 3}
 --- !u!4 &8125842974064148196 stripped

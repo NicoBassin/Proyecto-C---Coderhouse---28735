@@ -9,7 +9,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     // Variables para el salto.
     private Vector3 playerJump;
-    private float playerSpeed = 2.0f;
+    [SerializeField] private float playerSpeed = 3.5f;
     private float jumpHeight = 1.5f;
     private float gravity = -9.81f;
     private bool canJump = true;
@@ -20,7 +20,7 @@ public class PlayerCharacterController : MonoBehaviour
     private float xAxisRotation = 0f;
     private float yAxisRotation = 0f;
     private float xMinRotation = -90f;
-    private float xMaxRotation = 90f;
+    private float xMaxRotation = 60f;
     [SerializeField] private float sensibility = 2.5f;
 
     // Start is called before the first frame update
