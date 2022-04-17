@@ -1,52 +1,12 @@
 fileFormatVersion: 2
-guid: a91f3cf476d4b0c4b81c916d6ba7edb4
+guid: 76ff2f3c076a99f43809dbc8b5e5834d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch21_body
-    second: {fileID: 2100000, guid: 9119f951abc45e34c9b0c9ba973bf895, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch21_hair
-    second: {fileID: 2100000, guid: 37a6d2af4de53f340bee571e7c30294f, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1001_Diffuse
-    second: {fileID: 2800000, guid: 3f62369cfc37cfe43b45cf0a1f0d5595, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1001_Glossiness
-    second: {fileID: 2800000, guid: 05a552f496b70aa45b30b6285c2473cd, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1001_Normal
-    second: {fileID: 2800000, guid: e32bc1b2c839ae347b77575417919d90, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1001_Specular
-    second: {fileID: 2800000, guid: 55fc31045afaa634eb3e1e8cda73e70a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1002_Diffuse
-    second: {fileID: 2800000, guid: a5b8dd586007ef041bd08642951b9a15, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch21_1002_Normal
-    second: {fileID: 2800000, guid: 59cada27a8b84d946b779d464d67c290, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -73,7 +33,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -537,43 +526,43 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Player Model(Clone)
+    - name: Ch21_nonPBR(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Pants
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Shirt
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Body
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Shoes
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Eyelasshes
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch21_Hair
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Player Model(Clone)
+      parentName: Ch21_nonPBR(Clone)
       position: {x: 0.000035594407, y: 0.9546493, z: -0.0008047147}
       rotation: {x: 0.0000013247941, y: 0.000009836958, z: -0.00031904457, w: 0.99999994}
       scale: {x: 1, y: 1, z: 1}
