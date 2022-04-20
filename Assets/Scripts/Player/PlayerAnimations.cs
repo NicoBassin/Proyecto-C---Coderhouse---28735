@@ -56,7 +56,6 @@ public class PlayerAnimations : MonoBehaviour
     }
 
     private void Moving(){
-        Debug.Log("Apretando: " + keysPressed + "teclas");
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)){
             if(keysPressed == 0 && !isCasting){
                 playerAnimator.CrossFade("Walk", crossfadeTime);

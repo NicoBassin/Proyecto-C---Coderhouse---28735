@@ -29,10 +29,8 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private float playerSpeed = 3.5f;
     private bool isRunning = false;
     private bool canMove = true;
-
     private float timeOne = 1.84f;
     private float timeTwo = 1.51f;
-
     private float jumpDelay = 0.5f;
     private bool isJumping = false;
     private float jumpAnimationDelay = 1.9f;
@@ -70,7 +68,6 @@ public class PlayerCharacterController : MonoBehaviour
 
         // Si tocó el piso (en el último Move) y no está saltando, su velocidad en Y es 0 y puede saltar de nuevo. Reinicia el StepOffset.
         if(ccPlayer.isGrounded && !isJumping){
-            Debug.Log("Tocó el piso");
             ccPlayer.stepOffset = originalStepOffset;
             playerJump.y = 0f;
             canJump = true;

@@ -8,7 +8,7 @@ public class CamerasManager : MonoBehaviour
     int camCounter = 0;
 
     private void Awake(){   
-        int countCM = FindObjectsOfType<AudioManager>().Length;
+        int countCM = FindObjectsOfType<CamerasManager>().Length;
         if(countCM > 1){
             Destroy(gameObject);
         }

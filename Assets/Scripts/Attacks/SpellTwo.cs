@@ -1,19 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class SpellTwo : Spells
 {
-    public event Action OnEnemyHitTwo;
+    public override int Damage { get{return 30;}}
+    public override int SpellForce { get{return 45;}}
     
-    void Awake(){
+    protected override void Awake(){
+        base.Awake();
         FindObjectOfType<PlayerAttack>().OnAttackTwo += Attack;
-    }
-
-    private void OnParticleCollision(GameObject other) {
-        if(other.gameObject.CompareTag("Enemy")){
-            OnEnemyHitTwo?.Invoke();
-        }
     }
 }

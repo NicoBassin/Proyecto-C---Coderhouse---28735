@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ZombieChase : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    private GameObject player;
     [SerializeField] private float chaseSpeed = 2.5f;
     [SerializeField] private float rotateSpeed = 2.0f;
-    [SerializeField] private float minDistance = 1.0f;
     private bool isAttacking = false;
     private float attackTime = 0.75f;
     private float knockbackStrength = 50.0f;
@@ -15,8 +14,9 @@ public class ZombieChase : MonoBehaviour
     private Rigidbody rb;
 
     void Start() {
+        player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody>();
-        FindObjectOfType<ZombieAttack>().OnAttackPlayer += Attacking;
+        GetComponent<ZombieAttack>().OnAttackPlayer += Attacking;
     }
 
     // Update is called once per frame
@@ -45,10 +45,12 @@ public class ZombieChase : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
     }
 
-    private void Attacking(){
-        rb.velocity = Vector3.zero;
-        rb.AddForce(Vector3.up * jumpForceStrength, ForceMode.Impulse);
-        StartCoroutine(ChangeState());
+    private void Attacking(int damage, GameObject zombie){
+        if(zombie == this.gameObject){
+            rb.velocity = Vector3.zero;
+            rb.AddForce(Vector3.up * jumpForceStrength, ForceMode.Impulse);
+            StartCoroutine(ChangeState());
+        }
     }
 
     IEnumerator ChangeState(){
