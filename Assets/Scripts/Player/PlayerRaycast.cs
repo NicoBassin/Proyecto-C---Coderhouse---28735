@@ -9,6 +9,13 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] private GameObject shootPoint;
     private float raySpellDistance = 15f;
     private GameObject lastHit;
+    private bool deleted = false;
+
+    private void Awake(){
+        foreach(ZombieHit zombie in FindObjectsOfType<ZombieHit>()){
+            zombie.OnEnemyKilled += Deleted;
+        }
+    }
 
     private void Update(){
         PlayerRaycastSpells();
@@ -23,9 +30,18 @@ public class PlayerRaycast : MonoBehaviour
             lastHit = hit.transform.gameObject;
         }
         else{
-            if(lastHit != null){
+            if(lastHit != null && !deleted){
                 OnEnemyRaycasted?.Invoke(false, lastHit);
             }
         }
+    }
+
+    private void Deleted(GameObject zombie){
+        StartCoroutine(DeletedCoroutine());
+    }
+
+    IEnumerator DeletedCoroutine(){
+        deleted = true;
+        yield return new WaitForSeconds(0.2f);
     }
 }
