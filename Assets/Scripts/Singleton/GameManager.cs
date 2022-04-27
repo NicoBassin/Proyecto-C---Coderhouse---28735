@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private enum Difficulty{
+    public enum Difficulty{
         Easy,
         Normal,
         Hard,
@@ -13,20 +13,21 @@ public class GameManager : MonoBehaviour
     }
     public static GameManager gmInstance;
     public int score, playerLife;
-    [SerializeField] Difficulty difficulty;
+    [SerializeField] public Difficulty difficulty;
+    
 
     private void Awake(){
         if(gmInstance == null){
             gmInstance = this;
             DontDestroyOnLoad(gameObject);
-            InitVariables();
+            ResetStats();
         }
         else{
             Destroy(gameObject);
         }
     }
     
-    private void InitVariables(){
+    public void ResetStats(){
         score = 0;
         switch(difficulty){
             case Difficulty.Easy:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,10 @@ public class HUDController : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
     [SerializeField] private GameObject instructions;
+    [SerializeField] private GameObject inGameHUD;
+    [SerializeField] private Text lifeText;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text difficultyText;
     public static HUDController HUDMInstance;
 
     public event Action OnSceneChange;
@@ -27,6 +32,7 @@ public class HUDController : MonoBehaviour
 
     private void Update(){
         MainMenu();
+        InGameHUD();
     }
 
     private void MainMenu(){
@@ -34,6 +40,24 @@ public class HUDController : MonoBehaviour
             if(SceneManager.GetActiveScene().name == "Level1"){
                 NextLevel();
             }
+        }
+        difficultyText.text = "Difficulty: " + GameManager.gmInstance.difficulty;
+    }
+
+    private void InGameHUD(){
+        lifeText.text = GameManager.gmInstance.playerLife.ToString();
+        scoreText.text = GameManager.gmInstance.score.ToString();
+    }
+
+    public void DifficultyUp(){
+        if(GameManager.gmInstance.difficulty != GameManager.Difficulty.Extreme){
+            GameManager.gmInstance.difficulty++;
+        }
+    }
+
+    public void DifficultyDown(){
+        if(GameManager.gmInstance.difficulty != GameManager.Difficulty.Easy){
+            GameManager.gmInstance.difficulty--;
         }
     }
 
@@ -50,10 +74,13 @@ public class HUDController : MonoBehaviour
     private void NextScene(){
         if(SceneManager.GetActiveScene().name == "Level1"){
             SceneManager.LoadScene("Main");
+            inGameHUD.SetActive(false);
             panel.SetActive(true);
         }
         if(SceneManager.GetActiveScene().name == "Main"){
             SceneManager.LoadScene("Level1");
+            GameManager.gmInstance.ResetStats();
+            inGameHUD.SetActive(true);
             panel.SetActive(false);
         }
     }

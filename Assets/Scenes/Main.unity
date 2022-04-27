@@ -163,6 +163,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1323785316}
     m_Modifications:
+    - target: {fileID: 2729475612105189067, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612192866978, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612571541211, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613089939149, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613370864285, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2729475613742491820, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -210,6 +230,10 @@ PrefabInstance:
     - target: {fileID: 2729475613742491821, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_Name
       value: Enemy Portal (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613742491821, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
@@ -333,7 +357,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &918908470
 MeshCollider:
@@ -496,6 +520,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1323785316}
     m_Modifications:
+    - target: {fileID: 2729475612105189067, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612192866978, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612571541211, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613089939149, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613370864285, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2729475613742491820, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -543,6 +587,10 @@ PrefabInstance:
     - target: {fileID: 2729475613742491821, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_Name
       value: Enemy Portal (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613742491821, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
@@ -956,7 +1004,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1323785316
 Transform:
@@ -1049,6 +1097,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5182049135641016430, guid: 54a3f5ad36d50e64b87be137a0c90e34, type: 3}
   m_PrefabInstance: {fileID: 1343361272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1365514281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2786643863220945649, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+  m_PrefabInstance: {fileID: 2861636505658000757}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1394416020
 GameObject:
@@ -1465,6 +1518,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1767437161946929737, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767437162245523197, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767437162440948346, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767437162600877603, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767437162725749749, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1767437163650428968, guid: 54aad38c970444549a4493c05cf95408, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1513,6 +1586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 1767437163650428971, guid: 54aad38c970444549a4493c05cf95408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54aad38c970444549a4493c05cf95408, type: 3}
 --- !u!1001 &2729475613081252731
@@ -1525,6 +1602,26 @@ PrefabInstance:
     - target: {fileID: -5318037829431708016, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612105189067, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612192866978, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475612571541211, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613089939149, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729475613370864285, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2729475613742491820, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
       propertyPath: m_RootOrder
@@ -1574,6 +1671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 2729475613742491821, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5fad441552f2e4a8893d4c5771808f, type: 3}
 --- !u!1001 &2861636505658000757
@@ -1583,6 +1684,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 374438586098909273, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 586033670892292591, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 886301686169873106, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081145811005626745, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786643863220945649, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2861636505884733980, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -1631,9 +1752,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2861636505884733983, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: inGameHUD
+      value: 
+      objectReference: {fileID: 1365514281}
     - target: {fileID: 2861636506917065702, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836381550200644554, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492265420122479946, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498073314890184465, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860685553525732912, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afd78ffe219dd58459125f1b90c45bf3, type: 3}

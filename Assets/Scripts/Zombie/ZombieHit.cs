@@ -32,6 +32,7 @@ public class ZombieHit : MonoBehaviour
             spell.OnEnemyHit -= OnZombieHit;
         }
         OnEnemyKilled?.Invoke(this.gameObject);
+        GameManager.gmInstance.score++;
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
